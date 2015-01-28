@@ -29,6 +29,8 @@ public class Persona {
 	
 	// CONSTRUCTORES
 	
+	
+	
 	public Persona ()
 	{
 		int aux = (int) (Math.random()*40);
