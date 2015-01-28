@@ -27,6 +27,8 @@ public class Persona {
 	private Maestria maestria;
 	private Naturaleza naturaleza;
 	
+	private int locura;
+	
 	// CONSTRUCTORES
 	
 	
