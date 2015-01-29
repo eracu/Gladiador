@@ -67,6 +67,37 @@ public class Persona {
 		this.vivo = true;
 	}
 	
+	public Persona(Persona persona)
+	{
+			
+			this.vidaMax = persona.vidaMax;
+			this.vida = persona.vida;
+			
+			this.energiaMax = persona.energiaMax;
+			this.energia = persona.vida;
+			
+			this.fuerza = persona.vida;
+			
+			this.destreza = persona.destreza;		
+		
+			this.inteligencia = persona.inteligencia;	
+			
+			this.hambreMax = persona.hambreMax;
+			this.hambre = persona.hambre;
+			
+			this.nivel = persona.nivel;
+			
+			this.enfado = persona.enfado;
+			
+			this.rasgo = persona.getRasgo();
+			this.naturaleza = persona.getNaturaleza();
+			this.maestria = persona.getMaestria();
+			
+			this.apodo = persona.apodo;
+			
+			this.vivo = persona.vivo;		
+	}
+	
 	//METODOS
 	
 	public void verEstadisticas()
@@ -83,6 +114,33 @@ public class Persona {
 	{
 		 this.vida = this.vida - daño;
 		 comprobarVivo();
+		 System.out.println(this.apodo + " RECIBE " + daño + " Puntos de daño.");
+	}
+	
+	public void hacerDaño(Persona victima)
+	{	
+		int aux = this.destreza/10;
+		aux = aux * 5 + 30;
+	
+		boolean aux2 = acierto(aux);
+		
+		if (aux2 == true)
+		{
+			System.out.println(this.apodo + " Acierta en el blanco ¡¡");
+			victima.recibirDaño(50);
+		}
+		else
+		{
+			System.out.println(this.apodo + " Falla su ataque ¡¡");
+		}
+
+	}
+	
+	public boolean acierto(int probabilidad)
+	{
+		int aux = (int) (Math.random()*100);
+		if(aux < probabilidad) return false;
+		else return true;
 	}
 	
 	public void comprobarVivo()
