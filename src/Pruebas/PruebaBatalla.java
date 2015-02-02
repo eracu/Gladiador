@@ -1,5 +1,10 @@
 package Pruebas;
 
+/**
+ * @param
+ * @return
+ */
+
 import Eventos.*;
 import Objetos.*;
 import Personajes.*;

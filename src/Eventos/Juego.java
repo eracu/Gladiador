@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import Edificios.Coliseo;
+import Edificios.Tienda;
 import Personajes.Persona;
 
 public class Juego {
@@ -47,7 +48,7 @@ public class Juego {
 	    	System.out.println("-----MENU-----");
 	    	System.out.println("1)Ver Disponibles");
 	    	System.out.println("2)Coliseo");
-	    	System.out.println("3)Tienda de Esclavos");
+	    	System.out.println("3)Mercado");
 	    	System.out.println("4)Salir");
 	    	System.out.println("Inserte una opcion: ");   	
 	
@@ -72,9 +73,8 @@ public class Juego {
 	    		    	
 	    	if(respuesta == 3)
 	    	{
-	    		System.out.println("No disponible en BETA");
+	    		mercado();
 		    }
-	    	
     	}
     }
 		    			
@@ -158,6 +158,36 @@ public class Juego {
     	}
     }
 
+    public void mercado()
+    {
+    	Tienda tienda = new Tienda();
+    	int respuesta = tienda.menuTienda();
+    	
+    	if(respuesta == 1)
+    	{
+    		if(tienda.ofertaEsclavos() == true)
+    		{
+    			personas.addAll(tienda.getPersonas());
+    			this.dinero = this.dinero - tienda.getPrecioEsclavos();
+    		}
+    	}
+    	else if (respuesta == 2)
+    	{
+    		System.out.println("NO DISPONIBLE EN BETA");
+    	}
+    	
+    	else if (respuesta == 3)
+    	{
+    		System.out.println("NO DISPONIBLE EN BETA");
+    	}
+    	
+    	else if (respuesta == 4)
+    	{
+    		System.out.println("NO DISPONIBLE EN BETA");
+    	}
+    	
+    	
+    }
 
 }
 

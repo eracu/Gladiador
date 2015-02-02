@@ -30,8 +30,6 @@ public class Persona {
 	
 	// CONSTRUCTORES
 	
-	
-	
 	public Persona ()
 	{
 		int aux = (int) (Math.random()*40);
@@ -95,11 +93,16 @@ public class Persona {
 			
 			this.apodo = persona.apodo;
 			
-			this.vivo = persona.vivo;		
+			this.vivo = persona.vivo;			
 	}
 	
 	//METODOS
 	
+	/**
+	 * Saca por pantalla las estadisticas de la persona.
+	 * @param vacio
+	 * @return vacio
+	 */
 	public void verEstadisticas()
 	{
 		
@@ -110,6 +113,11 @@ public class Persona {
 		
 	}
 
+	/**
+	 * 
+	 * @param
+	 * @return
+	 */
 	public void recibirDaño(int daño)
 	{
 		 this.vida = this.vida - daño;
