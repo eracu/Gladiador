@@ -1,9 +1,9 @@
-package Edificios;
+package edificios;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Personajes.Persona;
+import personajes.Persona;
 
 public class Tienda {
 	

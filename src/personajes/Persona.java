@@ -1,8 +1,8 @@
-package Personajes;
+package personajes;
 
-import Habilidades.Maestria;
-import Habilidades.Naturaleza;
-import Habilidades.Rasgo;
+import habilidades.Maestria;
+import habilidades.Naturaleza;
+import habilidades.Rasgo;
 
 public class Persona {
 	

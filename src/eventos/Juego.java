@@ -1,11 +1,11 @@
-package Eventos;
+package eventos;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import Edificios.Coliseo;
-import Edificios.Tienda;
-import Personajes.Persona;
+import edificios.Coliseo;
+import edificios.Tienda;
+import personajes.Persona;
 
 public class Juego {
 

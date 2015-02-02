@@ -1,4 +1,4 @@
-package Habilidades;
+package habilidades;
 
 public enum Naturaleza {
 

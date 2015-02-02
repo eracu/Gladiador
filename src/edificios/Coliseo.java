@@ -1,8 +1,8 @@
-package Edificios;
+package edificios;
 
 import java.util.Scanner;
 
-import Personajes.Persona;
+import personajes.Persona;
 
 public class Coliseo {
 	

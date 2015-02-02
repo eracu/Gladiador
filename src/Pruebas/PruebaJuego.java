@@ -1,6 +1,6 @@
 package Pruebas;
 
-import Eventos.Juego;
+import eventos.Juego;
 
 public class PruebaJuego {
 

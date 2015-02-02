@@ -1,4 +1,4 @@
-package Personajes;
+package personajes;
 
 public enum Nombres {
 

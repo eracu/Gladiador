@@ -5,9 +5,9 @@ package Pruebas;
  * @return
  */
 
-import Eventos.*;
-import Objetos.*;
-import Personajes.*;
+import eventos.*;
+import objetos.*;
+import personajes.*;
 
 public class PruebaBatalla {
 
